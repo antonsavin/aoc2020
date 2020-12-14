@@ -3,7 +3,7 @@ use std::io::prelude::BufRead;
 use std::collections::HashSet;
 
 fn main() {
-    let mut nums = HashSet::<i32>::new();
+    let mut nums = HashSet::new();
 
     for line in io::stdin().lock().lines() {
         let num:i32 = line.unwrap().trim().parse().expect("Failed to parse");
